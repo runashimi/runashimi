@@ -86,10 +86,10 @@ WSGI_APPLICATION = 'core.wsgi.application'
 """ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME'  : 'runa',
         'USER'  : 'postgres',
         'PASSWORD' : 'runa',
         'HOST' : 'localhost',
+        'NAME'  : 'runa',
         'PORT' : '5432',
     }
 } """
@@ -102,12 +102,33 @@ WSGI_APPLICATION = 'core.wsgi.application'
         'HOST' :'ec2-44-194-54-186.compute-1.amazonaws.com',
         'PORT' :'5432',
         }
-}"""
+}
 DATABASE_URL="postgresql://postgres:AvcPN78d6y8Acadl3Q3C@containers-us-west-33.railway.app:7609/railway"
 DATABASES= {
     'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=1800 )
 }
+DATABASES = {
+    'default': {
+        'ENGINE' :'django.db.backends.postgresql_psycopg2',
+        'NAME' :'d47lnb9r0thfif',
+        'USER'  :'cvgztmnfndazgh',
+        'PASSWORD': '14a70b5b191c20399b0431fb5bef66592488824b9c2ff4841026679896a6d453',
+        'HOST' :'ec2-44-194-54-186.compute-1.amazonaws.com',
+        'PORT' :'5432',
+        }
+}
+"""
 
+ DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'USER'  : 'postgres',
+        'PASSWORD' : 'runa',
+        'HOST' : 'localhost',
+        'NAME'  : 'runa',
+        'PORT' : '5432',
+    }
+} 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
