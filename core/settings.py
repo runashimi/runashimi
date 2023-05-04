@@ -22,7 +22,7 @@ DEBUG = config('DEBUG', default=True, cast=bool)
 #DEBUG= False
 
 # load production server from .env
-ALLOWED_HOSTS = ['localhost', '0.0.0.0:$PORT', config('SERVER', default='0.0.0.0:$PORT')]
+ ALLOWED_HOSTS = ['51.79.100.34', '51.79.100.34:8000', config('SERVER', default='51.79.100.34:8000')]
 # ALLOWED_HOSTS =['web-production-aaa6b.up.railway.app']
 
 # Application definition
